@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Example</title>
+	<link rel="stylesheet" href="video-default.css">
+</head>
+<body>
+	<video width="900" height="550">
+		<source type='video/mp4' src="movie.mp4">
+	</video>
+	<script src="jquery.min.js"></script>
+	<script src="video.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('video').videoPlayer({
+				'playerWidth' : 1.0
+			});
+		});
+	</script>
+</body>
+</html>
